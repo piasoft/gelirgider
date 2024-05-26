@@ -1,0 +1,1 @@
+<?php require('_class/config.php');  $_COOKIE[] = array();  setcookie('admin_id', '', time()-3600, '/'); exit('<script>window.location.href="index.php";</script>');  ?>

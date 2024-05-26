@@ -1,0 +1,187 @@
+/*!
+ * Bootstrap-select v1.13.9 (https://developer.snapappointments.com/bootstrap-select)
+ *
+ * Copyright 2012-2019 SnapAppointments, LLC
+ * Licensed under MIT (https://github.com/snapappointments/bootstrap-select/blob/master/LICENSE)
+ */
+.bootstrap-select > select.bs-select-hidden,
+select.bs-select-hidden,
+select.selectpicker {
+    display: none !important;
+}
+.bootstrap-select {
+    width: 220px\0;
+    vertical-align: middle;
+}
+.bootstrap-select > .dropdown-toggle {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.bootstrap-select > .dropdown-toggle:after {
+    margin-top: -1px;
+}
+.bootstrap-select > .dropdown-toggle.bs-placeholder,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    color: #999;
+}
+
+.bootstrap-select > select {
+    position: absolute !important;
+    bottom: 0;
+    left: 50%;
+    display: block !important;
+    width: 0.5px !important;
+    height: 100% !important;
+    padding: 0 !important;
+    opacity: 0 !important;
+    border: none;
+    z-index: 0 !important;
+}
+.bootstrap-select > select.mobile-device {
+    top: 0;
+    left: 0;
+    display: block !important;
+    width: 100% !important;
+    z-index: 2 !important;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 220px;
+}
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+    outline: thin dotted #333 !important;
+    outline: 5px auto -webkit-focus-ring-color !important;
+    outline-offset: -2px;
+}
+.bootstrap-select.form-control {
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+}
+:not(.input-group) > .bootstrap-select.form-control:not([class*="col-"]) {
+    width: 100%;
+}
+
+
+.form-group .bootstrap-select{
+    margin-bottom: 0;
+}
+
+.bootstrap-select.disabled,
+.bootstrap-select > .disabled {
+    cursor: not-allowed;
+}
+.bootstrap-select.disabled:focus,
+.bootstrap-select > .disabled:focus {
+    outline: 0 !important;
+}
+.bootstrap-select.bs-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0 !important;
+    padding: 0 !important;
+}
+.bootstrap-select.bs-container .dropdown-menu {
+    z-index: 1060;
+}
+
+
+
+.input-group .bootstrap-select.form-control .dropdown-toggle {
+    border-radius: inherit;
+}
+.bootstrap-select[class*="col-"] .dropdown-toggle {
+    width: 100%;
+}
+.bootstrap-select .dropdown-menu {
+    min-width: 100%;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bootstrap-select .dropdown-menu > .inner:focus {
+    outline: 0 !important;
+}
+.bootstrap-select .dropdown-menu.inner {
+    position: static;
+    float: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.bootstrap-select .dropdown-menu li {
+    position: relative;
+}
+
+.bootstrap-select .dropdown-menu li.disabled a {
+    cursor: not-allowed;
+}
+.bootstrap-select .dropdown-menu li a {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.bootstrap-select .dropdown-menu li a.opt {
+    position: relative;
+    padding-left: 2.25em;
+}
+.bootstrap-select .dropdown-menu li a span.check-mark {
+    display: none;
+}
+.bootstrap-select .dropdown-menu li a span.text {
+    display: inline-block;
+}
+.bootstrap-select .dropdown-menu li small {
+    margin-left:10px;
+}
+
+
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    top: 5px;
+}
+.bootstrap-select.show-tick .dropdown-menu li a span.text {
+    margin-right: 34px;
+}
+
+.bootstrap-select.show-menu-arrow.open > .dropdown-toggle,
+.bootstrap-select.show-menu-arrow.show > .dropdown-toggle {
+    z-index: 1061;
+}
+
+.bs-searchbox {
+    padding: 4px 8px;
+}
+
+
+.bs-searchbox .form-control {
+    margin-bottom: 0;
+    width: 100%;
+    float: none;
+}
